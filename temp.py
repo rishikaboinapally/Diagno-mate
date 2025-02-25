@@ -41,7 +41,7 @@ def get_y(r):
 @st.cache_data
 def show_banner():
     try:
-        with open("C:/Users/lookv/.spyder-py3/assets/med.jpeg", "rb") as file_:  # Update path if needed
+        with open("assets/med.jpeg", "rb") as file_:  # Update path if needed
             contents = file_.read()
             data_url = base64.b64encode(contents).decode("utf-8")
         return data_url

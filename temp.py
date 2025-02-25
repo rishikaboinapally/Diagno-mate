@@ -98,6 +98,7 @@ option = st.sidebar.radio("Select a page:",
 # -------------------------------------------
 # Home Section (Diagnomate Banner and Description)
 # -------------------------------------------
+# Home Section (Diagnomate Banner and Description)
 if option == "Home":
     st.title("💡 Diagnomate: Your AI Health Diagnostic Companion")
     st.subheader("💖 Empowering Proactive Healthcare Decisions")
@@ -111,12 +112,12 @@ if option == "Home":
             unsafe_allow_html=True,
         )
     st.divider()
-
+    
     st.subheader("⚠️ Problems in Healthcare")
     st.markdown("**💊 Challenges in Prescription Interpretation and Pharmacy Operations:** The healthcare industry often faces challenges related to the accurate interpretation of handwritten prescriptions, leading to potential errors in medication dispensing. Additionally, the manual process of matching prescriptions with available inventory is time-consuming and prone to human errors, causing delays in order fulfillment and inefficiencies in pharmacy operations.")
     st.markdown("**🧪 Complexities in Medical Diagnostics:** There is a risk of human error in analyzing medical images, which can lead to misdiagnosis or overlooked conditions. Limited access to experienced specialists, especially in remote or underserved areas, further exacerbates the challenge of timely and accurate diagnosis.")
     st.divider()
-
+    
     st.subheader("💡 Solution")
     st.markdown("**💊 Pharmacist Assistant**")
     st.markdown("Pharmacist’s Assistant tool streamlines the process of extracting medicine information from prescription images and assists pharmacists in quickly matching prescribed medicines with existing inventory, ultimately simplifying order creation.")
@@ -124,38 +125,43 @@ if option == "Home":
     st.markdown(" OCR (Optical Character Recognition) | Image Preprocessing (OpenCV) | CLAHE (Contrast Limited Adaptive Histogram Equalization)")
     st.subheader("📊 Result")
 
-    # Display images in each column
+    # Display images in each column using Pathlib to build the paths
     col1, col2 = st.columns(2)
     with col1:
-        st.image("assets/Screenshot 2025-02-25 193504.png", caption="📋 Result Image 1", use_container_width=True)
+        image_path1 = Path("assets") / "Screenshot 2025-02-25 193504.png"
+        st.image(str(image_path1), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image("assets/Screenshot 2025-02-25 195746.png", caption="📋 Result Image 2", use_container_width=True)
-
+        image_path2 = Path("assets") / "Screenshot 2025-02-25 195746.png"
+        st.image(str(image_path2), caption="📋 Result Image 2", use_container_width=True)
+    
     st.markdown("**🩺 Diagnosis Assistant**")
-    st.markdown("The Diagnosis Assistant addresses the challenge of self-diagnosis and preliminary health consultations. Often, individuals struggle to describe symptoms accurately or may not have immediate access to medical professionals. Additionally, it supports healthcare professionals by acting as a decision-support tool, helping them quickly analyze patient-described symptoms, streamline initial assessments , and reduce diagnostic errors.")
+    st.markdown("The Diagnosis Assistant addresses the challenge of self-diagnosis and preliminary health consultations. Often, individuals struggle to describe symptoms accurately or may not have immediate access to medical professionals. Additionally, it supports healthcare professionals by acting as a decision-support tool, helping them quickly analyze patient-described symptoms, streamline initial assessments, and reduce diagnostic errors.")
     st.markdown("**🧠 AI Techniques and Algorithms Used:**")
     st.markdown(" Large Language Model (LLM) – llama3-8b-8192 | Prompt Engineering")
     st.subheader("📊 Result")
-
-    # Display images in each column
+    
     col1, col2 = st.columns(2)
     with col1:
-        st.image(r"assets/Screenshot 2025-02-25 201228.png", caption="📋 Result Image 1", use_container_width=True)
+        image_path3 = Path("assets") / "Screenshot 2025-02-25 201228.png"
+        st.image(str(image_path3), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image(r"assets/Screenshot 2025-02-25 165841.png", caption="📋 Result Image 2", use_container_width=True)
-
+        image_path4 = Path("assets") / "Screenshot 2025-02-25 165841.png"
+        st.image(str(image_path4), caption="📋 Result Image 2", use_container_width=True)
+    
     st.markdown("**🖼️ X-ray Analyzer**")
-    st.markdown("The X-ray Analyser addresses challenges in medical diagnostics by reducing human error , speeding up the analysis process, and ensuring consistent evaluations of X-ray images. It aids healthcare professionals in early detection of conditions, even in regions lacking specialized radiologists, enabling faster and more accurate diagnoses.")
+    st.markdown("The X-ray Analyser addresses challenges in medical diagnostics by reducing human error, speeding up the analysis process, and ensuring consistent evaluations of X-ray images. It aids healthcare professionals in early detection of conditions, even in regions lacking specialized radiologists, enabling faster and more accurate diagnoses.")
     st.markdown("**🧠 AI Techniques and Algorithms Used:**")
     st.markdown("Convolutional Neural Networks (CNNs)")
     st.subheader("📊 Result")
-
-    # Display images in each column
+    
     col1, col2 = st.columns(2)
     with col1:
-        st.image(r"assets/Screenshot 2025-02-25 203846.png", caption="📋 Result Image 1", use_container_width=True)
+        image_path5 = Path("assets") / "Screenshot 2025-02-25 203846.png"
+        st.image(str(image_path5), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image(r"assets/Screenshot 2025-02-25 175402.png", caption="📋 Result Image 2", use_container_width=True)
+        image_path6 = Path("assets") / "Screenshot 2025-02-25 175402.png"
+        st.image(str(image_path6), caption="📋 Result Image 2", use_container_width=True)
+
 
 # 3) Pharmacist’s Assistant
 # -------------------------------------------

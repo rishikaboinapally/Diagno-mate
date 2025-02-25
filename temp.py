@@ -127,9 +127,9 @@ if option == "Home":
     # Display images in each column
     col1, col2 = st.columns(2)
     with col1:
-        st.image("C:/Users/lookv/.spyder-py3/assets/Screenshot 2025-02-25 193504.png", caption="📋 Result Image 1", use_container_width=True)
+        st.image("assets\Screenshot 2025-02-25 193504.png", caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image("C:/Users/lookv/.spyder-py3/assets/Screenshot 2025-02-25 195746.png", caption="📋 Result Image 2", use_container_width=True)
+        st.image("assets\Screenshot 2025-02-25 195746.png", caption="📋 Result Image 2", use_container_width=True)
 
     st.markdown("**🩺 Diagnosis Assistant**")
     st.markdown("The Diagnosis Assistant addresses the challenge of self-diagnosis and preliminary health consultations. Often, individuals struggle to describe symptoms accurately or may not have immediate access to medical professionals. Additionally, it supports healthcare professionals by acting as a decision-support tool, helping them quickly analyze patient-described symptoms, streamline initial assessments , and reduce diagnostic errors.")
@@ -140,9 +140,9 @@ if option == "Home":
     # Display images in each column
     col1, col2 = st.columns(2)
     with col1:
-        st.image(r"C:\Users\lookv\.spyder-py3\assets\Screenshot 2025-02-25 201228.png", caption="📋 Result Image 1", use_container_width=True)
+        st.image(r"assets/Screenshot 2025-02-25 201228.png", caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image(r"C:\Users\lookv\.spyder-py3\assets\Screenshot 2025-02-25 165841.png", caption="📋 Result Image 2", use_container_width=True)
+        st.image(r"assets/Screenshot 2025-02-25 165841.png", caption="📋 Result Image 2", use_container_width=True)
 
     st.markdown("**🖼️ X-ray Analyzer**")
     st.markdown("The X-ray Analyser addresses challenges in medical diagnostics by reducing human error , speeding up the analysis process, and ensuring consistent evaluations of X-ray images. It aids healthcare professionals in early detection of conditions, even in regions lacking specialized radiologists, enabling faster and more accurate diagnoses.")
@@ -153,9 +153,9 @@ if option == "Home":
     # Display images in each column
     col1, col2 = st.columns(2)
     with col1:
-        st.image(r"C:\Users\lookv\.spyder-py3\assets\Screenshot 2025-02-25 203846.png", caption="📋 Result Image 1", use_container_width=True)
+        st.image(r"assets/Screenshot 2025-02-25 203846.png", caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image(r"C:\Users\lookv\.spyder-py3\assets\Screenshot 2025-02-25 175402.png", caption="📋 Result Image 2", use_container_width=True)
+        st.image(r"assets/Screenshot 2025-02-25 175402.png", caption="📋 Result Image 2", use_container_width=True)
 
 # 3) Pharmacist’s Assistant
 # -------------------------------------------

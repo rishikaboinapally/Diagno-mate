@@ -127,9 +127,9 @@ if option == "Home":
     # Display images in each column
     col1, col2 = st.columns(2)
     with col1:
-        st.image("assets\Screenshot 2025-02-25 193504.png", caption="📋 Result Image 1", use_container_width=True)
+        st.image("assets/Screenshot 2025-02-25 193504.png", caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        st.image("assets\Screenshot 2025-02-25 195746.png", caption="📋 Result Image 2", use_container_width=True)
+        st.image("assets/Screenshot 2025-02-25 195746.png", caption="📋 Result Image 2", use_container_width=True)
 
     st.markdown("**🩺 Diagnosis Assistant**")
     st.markdown("The Diagnosis Assistant addresses the challenge of self-diagnosis and preliminary health consultations. Often, individuals struggle to describe symptoms accurately or may not have immediate access to medical professionals. Additionally, it supports healthcare professionals by acting as a decision-support tool, helping them quickly analyze patient-described symptoms, streamline initial assessments , and reduce diagnostic errors.")

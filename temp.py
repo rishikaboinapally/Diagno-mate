@@ -255,7 +255,7 @@ def xray_analyser():
         xray_img = PILImage.create(uploaded_xray)
         st.image(xray_img, caption="Uploaded X-ray", width=400)
         preds, _, probs = learn.predict(xray_img)
-        threshold = 0.5  # Lowered threshold for sensitive detection
+        threshold = 0.3  # Lowered threshold for sensitive detection
         labels = [learn.dls.vocab[i] for i, p in enumerate(probs) if p > threshold]
         st.subheader("Prediction Results")
         st.write(f"**Predicted Labels:** {', '.join(labels) if labels else 'No significant findings'}")

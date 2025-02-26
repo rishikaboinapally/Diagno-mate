@@ -128,10 +128,10 @@ if option == "Home":
     # Display images in each column using Pathlib to build the paths
     col1, col2 = st.columns(2)
     with col1:
-        image_path1 = Path("assets") / "Screenshot 2025-02-25 193504.png"
+        image_path1 = Path("assets") / "PA.png"
         st.image(str(image_path1), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        image_path2 = Path("assets") / "Screenshot 2025-02-25 195746.png"
+        image_path2 = Path("assets") / "PA_result.png"
         st.image(str(image_path2), caption="📋 Result Image 2", use_container_width=True)
     
     st.markdown("**🩺 Diagnosis Assistant**")
@@ -142,10 +142,10 @@ if option == "Home":
     
     col1, col2 = st.columns(2)
     with col1:
-        image_path3 = Path("assets") / "Screenshot 2025-02-25 201228.png"
+        image_path3 = Path("assets") / "DA.png"
         st.image(str(image_path3), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        image_path4 = Path("assets") / "Screenshot 2025-02-25 165841.png"
+        image_path4 = Path("assets") / "DA_result.png"
         st.image(str(image_path4), caption="📋 Result Image 2", use_container_width=True)
     
     st.markdown("**🖼️ X-ray Analyzer**")
@@ -156,10 +156,10 @@ if option == "Home":
     
     col1, col2 = st.columns(2)
     with col1:
-        image_path5 = Path("assets") / "Screenshot 2025-02-25 203846.png"
+        image_path5 = Path("assets") / "Xray.png"
         st.image(str(image_path5), caption="📋 Result Image 1", use_container_width=True)
     with col2:
-        image_path6 = Path("assets") / "Screenshot 2025-02-25 175402.png"
+        image_path6 = Path("assets") / "xray_result.png"
         st.image(str(image_path6), caption="📋 Result Image 2", use_container_width=True)
 
 
